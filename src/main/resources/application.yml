@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo-task-db?autoReconnect=true&useSSL=false&rewriteBatchedStatements=true
+    password: Saurabh@123
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    config:
+      use-legacy-processing: true
+
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
